@@ -19,7 +19,18 @@
 //
 //
 // -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+// додайте наступний рядок в Cypress/support/commands.js або в підключений файл кастомних команд
+
+declare namespace Cypress {
+    interface Chainable<Subject = any> {
+      visitHomePage(): Chainable<Window>;
+    }
+  }
+  
+  Cypress.Commands.add('visitHomePage', () => {
+    cy.visit(Cypress.env("BASE_URL"));
+  });
+  
 //
 //
 // -- This will overwrite an existing command --

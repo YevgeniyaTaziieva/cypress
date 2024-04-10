@@ -1,0 +1,25 @@
+
+
+{
+    "articles": [
+        {
+            "slug": "My-New-Article111-2165",
+            "title": "My New Article111",
+            "description": "This is my new article",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "tagList": [
+                "Test",
+                "example"
+            ],
+            "createdAt": "2024-04-10T15:39:05.167Z",
+            "updatedAt": "2024-04-10T15:39:05.167Z",
+            "favorited": false,
+            "favoritesCount": 0,
+            "author": {
+                "username": "test12343$",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            }
+        }
+    ]}
